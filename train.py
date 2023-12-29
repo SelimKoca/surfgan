@@ -8,7 +8,7 @@
 import os
 import time
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 import config
 import tfutil
@@ -276,6 +276,7 @@ def train_progressive_gan(
 # Calls the function indicated in config.py.
 
 if __name__ == "__main__":
+    tf.disable_v2_behavior()
     misc.init_output_logging()
     np.random.seed(config.random_seed)
     print('Initializing TensorFlow...')
