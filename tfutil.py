@@ -12,7 +12,7 @@ import importlib
 import imp
 import numpy as np
 from collections import OrderedDict
-import tensorflow.compat.v1 as tf
+import tensorflow as tf
 
 #----------------------------------------------------------------------------
 # Convenience.
@@ -247,7 +247,7 @@ class Optimizer:
     def __init__(
         self,
         name                = 'Train',
-        tf_optimizer        = 'tf.optimizers.Adam',
+        tf_optimizer        = 'tf.train.AdamOptimizer',
         learning_rate       = 0.001,
         use_loss_scaling    = False,
         loss_scaling_init   = 64.0,
