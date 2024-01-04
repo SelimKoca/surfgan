@@ -18,8 +18,8 @@ class EasyDict(dict):
 #----------------------------------------------------------------------------
 # Paths.
 
-data_dir = 'erdatasets'
-result_dir = 'erresults'
+data_dir = 'datasets'
+result_dir = 'results'
 
 #----------------------------------------------------------------------------
 # TensorFlow options.
