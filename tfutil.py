@@ -247,7 +247,7 @@ class Optimizer:
     def __init__(
         self,
         name                = 'Train',
-        tf_optimizer        = 'tf.train.Adam',
+        tf_optimizer        = 'tf.optimizers.Adam',
         learning_rate       = 0.001,
         use_loss_scaling    = False,
         loss_scaling_init   = 64.0,
